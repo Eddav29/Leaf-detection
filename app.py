@@ -5,9 +5,11 @@ from flask import Flask, request, jsonify
 import tensorflow as tf
 import numpy as np
 import cv2
+from flask_cors import CORS
 
 # Inisialisasi Flask
 app = Flask(__name__)
+CORS(app)
 
 # Muat model TensorFlow yang sudah dilatih
 MODEL_PATH = 'model_daun.keras'  # Path ke model
