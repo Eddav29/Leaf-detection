@@ -4,7 +4,7 @@ import requests
 URL = "http://127.0.0.1:5001/predict"
 
 # Path ke gambar yang akan dites
-TEST_IMAGE_PATH = "test_image.jpg"
+TEST_IMAGE_PATH = "black_spot.png"
 
 def test_prediction_api():
     """
